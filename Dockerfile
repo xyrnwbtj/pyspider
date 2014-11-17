@@ -13,7 +13,7 @@ RUN pip install --allow-all-external -r /opt/pyspider/requirements.txt
 # add all repo
 ADD ./ /opt/pyspider
 
-# run test
+
 WORKDIR /opt/pyspider
 RUN IGNORE_MYSQL=1 IGNORE_RABBITMQ=1 IGNORE_MONGODB=1 ./runtest.py
 
